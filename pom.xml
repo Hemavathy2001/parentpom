@@ -18,7 +18,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	   <repository>
 	     <id>github</id>
 	     <name>parentpom</name>
-	      <url>https://maven.pkg.github.com/Hemavathy2001/childpom</url>
+	      <url>https://maven.pkg.github.com/Hemavathy2001/parentpom</url>
 	   </repository>
 	</distributionManagement>
 	
