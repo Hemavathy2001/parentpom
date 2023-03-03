@@ -6,20 +6,19 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version;mvn clean install'
-                sh 'mvn compile'
+                sh 'mvn compile -s settings.xml'
             }
         }
         stage('test'){
             steps{
-                sh 'mvn test'
+                sh 'mvn test -s settings.xml'
             }
         }
         stage ('deploy'){     
             steps{
                 withCredentials([usernamePassword(credentialsId: 'git', passwordVariable: 'PASSWORD_VAR', usernameVariable: 'USERNAME_VAR')])
                 {
-                    sh 'mvn deploy -s .m2/settings.xml -Dserver.username=${USERNAME_VAR} -Dserver.password=${PASSWORD_VAR}'
+                    sh 'mvn deploy -s settings.xml -Dserver.username=${USERNAME_VAR} -Dserver.password=${PASSWORD_VAR}'
                 }
             }
         }
