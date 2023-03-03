@@ -19,7 +19,7 @@
        </repository>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/Hemavathy2001/childpom</url>
+          <url>https://maven.pkg.github.com/Hemavathy2001/parentpom</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
