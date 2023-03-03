@@ -22,16 +22,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	   </repository>
 	</distributionManagement>
 	
-	<repositories>
-		<repository>
-			<id>github</id>
-			<name>Dev Github Repo</name>
-			<url>https://maven.pkg.github.com/Hemavathy2001/parentpom<</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
-	</repositories>
+	
 	
   
 </project>  
